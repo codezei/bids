@@ -1,0 +1,86 @@
+.current {
+    margin-top: 20px;
+    padding-bottom: 50px;
+    .desc h3 {
+        margin: 0;
+    }
+    
+    .current-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        .current-item {
+            text-align: center;
+            position: relative;
+            display: flex;
+            width: 25%;
+            margin-top: 50px;
+            @media (max-width:1440px) {
+                width: 33%;
+            }
+        }
+        .current-item-wrap {
+            border: 1px solid rgb(0, 239, 213);
+            // padding: 15px 15px 30px 15px;
+            display: flex;
+            margin: 0 10px;
+
+            .column {
+                width: 33.33%;
+                position: relative;
+                padding: 15px 15px 30px 15px;
+                .hiden-content {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 239, 213, 0.3);
+                    display: none;
+                    top: 0;
+                    left: 0;
+                }
+                &:hover .hiden-content{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                img {
+                    height: 150px;
+                    width: 100%;
+                    object-fit: contain;
+                }
+                .score {
+                    font-size: 40px;
+                    margin: 10px 0;
+                }
+                figure {
+                    margin-top: 10px;
+                }
+                .view {
+                    border: 1px solid rgb(0, 239, 213);
+                    padding: 5px;
+                    display: block;
+                    width: max-content;
+                    margin: 0 auto;
+                    transition: all 200ms;
+                    -webkit-transition: all 200ms;
+                    -moz-transition: all 200ms;
+                    -ms-transition: all 200ms;
+                    -o-transition: all 200ms;
+                    &:hover {
+                        color: rgb(32, 39, 49);
+                        background: rgb(0, 239, 213);
+                        transition: all 200ms;
+                        -webkit-transition: all 200ms;
+                        -moz-transition: all 200ms;
+                        -ms-transition: all 200ms;
+                        -o-transition: all 200ms;
+}
+                }
+                .broadcast {
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+}

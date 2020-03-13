@@ -1,0 +1,142 @@
+.rate {
+    display: flex;
+    padding: 20px;
+    background: darken($color: rgb(32, 39, 49), $amount: 2%);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .rate-title {
+        width: 100%;
+        background: lighten($color: rgb(32, 39, 49), $amount: 10%);
+        margin-bottom: 20px;
+        text-align: center;
+        p {
+            margin: 10px 0;
+        }
+
+    }
+    .side-rate {
+        width: calc(50% - 10px);
+        // background: darken($color: rgb(32, 39, 49), $amount: 1%);
+    }
+}
+.side-rate {
+    .side-info {
+        display: flex;
+        background: lighten($color: rgb(32, 39, 49), $amount: 10%);
+        padding: 15px 100px;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        figure {
+            text-align: center;
+            img {
+                width: 50px;
+                height: 50px;
+                object-fit: contain;
+            }
+
+        }
+        .statistics {
+
+        }
+    }
+}
+.side-rate {
+    .rate-types {
+        .rate-type-wrap.hide {
+            border-bottom: 1px solid lighten($color: rgb(32, 39, 49), $amount: 10%);;
+            div[data-toggle="toggle"] {
+                height: 0;
+                opacity: 0;
+                transition: height 200ms;
+                -webkit-transition: height 200ms;
+                -moz-transition: height 200ms;
+                -ms-transition: height 200ms;
+                -o-transition: height 200ms;
+                z-index: -1;
+                pointer-events: none;
+            }
+        } 
+        .rate-type-wrap {
+            .type-title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 15px;
+                cursor: pointer;
+                h6, h4 {
+                    pointer-events: none;
+                }
+                &:hover {
+                    i {
+                        opacity: 0.7;
+                    }
+                    h6, h4 {
+                        opacity: 0.7;
+                    }
+                }
+                i {
+                    transition: all 200ms;
+                    -webkit-transition: all 200ms;
+                    -moz-transition: all 200ms;
+                    -ms-transition: all 200ms;
+                    -o-transition: all 200ms;
+                    pointer-events: none;
+                }
+                i.down {
+                    transform: rotate(180deg);
+                    -webkit-transform: rotate(180deg);
+                    -moz-transform: rotate(180deg);
+                    -ms-transform: rotate(180deg);
+                    -o-transform: rotate(180deg);
+                    transition: all 200ms;
+                    -webkit-transition: all 200ms;
+                    -moz-transition: all 200ms;
+                    -ms-transition: all 200ms;
+                    -o-transition: all 200ms;
+                }
+            }
+
+            .rate-type-item {
+                display: flex;
+                justify-content: space-between;
+                // height: 70px;
+                align-items: center;
+                background: lighten($color: rgb(32, 39, 49), $amount: 10%);
+                padding: 15px;
+                margin: 10px 0;
+                >div {
+                    display: flex;
+                    width: 200px;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                .btn-rate {
+                    border: 1px solid rgb(0, 239, 213);
+                    padding: 5px;
+                    display: block;
+                    width: 90px;
+                    // margin: 0 auto;
+                    transition: all 200ms;
+                    -webkit-transition: all 200ms;
+                    -moz-transition: all 200ms;
+                    -ms-transition: all 200ms;
+                    -o-transition: all 200ms;
+                    color: rgb(32, 39, 49);
+                    background: rgb(0, 239, 213);
+                    height: min-content;
+                    &:hover {
+                        border: 1px solid rgb(0, 239, 213);
+                        color: rgb(0, 239, 213);
+                        background: rgb(32, 39, 49);
+                        transition: all 200ms;
+                        -webkit-transition: all 200ms;
+                        -moz-transition: all 200ms;
+                        -ms-transition: all 200ms;
+                        -o-transition: all 200ms;
+                    }
+                 }
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.completed {
+    // margin-top: 20px;
+    border: 10px solid darken($color: rgb(32, 39, 49), $amount: 2%);
+    padding: 10px;
+    .desc {
+        display: flex;
+        justify-content: space-between;
+        .slick-nav-completed {
+            display: flex;
+            align-items: center;
+            .slick-prev {
+                order: 0;
+            }
+            .slick-next {
+                order: 2;
+            }
+            .slick-dots {
+                order: 1;
+                display: flex;
+            }
+        }
+    }
+    .completed-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        .completed-item {
+            text-align: center;
+            position: relative;
+            display: flex;
+            width: 33.33%;
+            margin-top: 10px;
+            // @media (max-width:1440px) {
+            //     width: 33.33%;
+            // }
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: calc(100% - 25px);
+                left: calc(50% - 125px);
+                border-bottom: 25px solid rgb(0, 239, 213);
+                border-left: 25px solid transparent;
+                border-right: 25px solid transparent;
+                height: 0;
+                width: 200px;
+            }
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: calc(100% - 24px);
+                left: calc(50% - 125px);
+                border-bottom: 25px solid rgb(32, 39, 49);
+                border-left: 25px solid transparent;
+                border-right: 25px solid transparent;
+                height: 0;
+                width: 200px;
+            }
+        }
+        .completed-item-wrap {
+            border: 1px solid rgb(0, 239, 213);
+            display: flex;
+            margin: 0 10px;
+            .column {
+                width: 33.33%;
+                position: relative;
+                padding: 15px 15px 30px 15px;
+                img {
+                    height: 150px;
+                    width: 100%;
+                    object-fit: contain;
+                }
+                .score {
+                    font-size: 40px;
+                    margin: 10px 0;
+                    margin-top: 50px;
+                }
+                .coef.active span{
+                    background-color: rgba(0, 239, 213, 0.3);
+                    margin-top: 3px;
+                    padding: 0 3px;
+                    
+                }
+                .coef.active{
+                    margin-top: 3px;
+                    
+                }
+                figure {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

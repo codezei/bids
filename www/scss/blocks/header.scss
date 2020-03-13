@@ -1,0 +1,123 @@
+.sub-menu, .main-menu {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    ul {
+        display: flex;
+        align-items: center;
+        li {
+            margin: 0 10px;
+            a {
+                transition: all 200ms;
+                -webkit-transition: all 200ms;
+                -moz-transition: all 200ms;
+                -ms-transition: all 200ms;
+                -o-transition: all 200ms;
+                &:hover {
+                    opacity: 0.7;
+                    transition: all 200ms;
+                    -webkit-transition: all 200ms;
+                    -moz-transition: all 200ms;
+                    -ms-transition: all 200ms;
+                    -o-transition: all 200ms;
+}
+            }
+        }
+    }
+    .left {
+        display: flex;
+    }
+    .right {
+        display: flex;
+    }
+}
+.volume img {
+    width: 30px;
+    height: 30px;
+}
+span.age {
+    display: block;
+    background: rgb(0, 239, 213);
+    color: rgb(32, 39, 49);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+span.question {
+    display: block;
+    background: rgb(0, 239, 213);
+    color: rgb(32, 39, 49);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 22px;
+
+}
+.banner-wrap {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    margin: 0 auto;
+    .banner {
+        width: 700px;
+        height: 300px;
+        
+        margin-bottom: 150px;
+        .banner-item {
+            a {
+                display: block;
+                img {
+                    object-fit: cover;
+                    width: 700px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+    .slick-nav-banner {
+        width: 300px;
+        display: flex;
+        height: fit-content;
+        align-self: flex-end;
+        justify-content: center;
+        position: absolute;
+        padding-bottom: 10px;
+        .slick-prev {
+            order: 0;
+        }
+        .slick-next {
+            order: 2;
+        }
+        .slick-dots {
+            order: 1;
+            display: flex;
+        }
+        
+    }
+}
+.switcher {
+    position: relative;
+    margin-left: 5px;
+
+}
+.switcher-popup {
+    position: absolute;
+    display: none;
+    margin-top: 5px;
+    margin-left: -30px;
+    .active {
+        opacity: 0.5;
+    }
+}
+.switcher-popup.open {
+    display: flex;
+    
+}

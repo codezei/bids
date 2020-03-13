@@ -1,0 +1,35 @@
+html {
+  overflow-x: hidden;
+}
+body {
+  background: #202731;
+}
+* {
+  color: #00efd5;
+  font-family: "comic";
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+p {
+  margin: 0;
+}
+figure {
+  margin: 0;
+}
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1360px;
+  }
+}
